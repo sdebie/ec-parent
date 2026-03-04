@@ -103,6 +103,15 @@
                     <artifactId>quarkus-maven-plugin</artifactId>
                     <version>${quarkus.platform.version}</version>
                     <extensions>true</extensions>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>build</goal>
+                                <goal>generate-code</goal>
+                                <goal>generate-code-tests</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
 
                 <!-- Jandex (index classes; helps CDI + build perf in some setups) -->
