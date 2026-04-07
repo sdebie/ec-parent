@@ -2,9 +2,9 @@
 
 ## 1. Dashboard
 
-A landing page showing the stuff that matters right now: new orders, low stock, failed payments, top products,
-revenue snapshots, and tasks needing attention. This is standard in commerce admin tools because store operators need
-an operational summary the moment they log in.
+A landing page showing the stuff that matters right now: new orders, low stock, failed payments, top products, revenue
+snapshots, and tasks needing attention. This is a standard in commerce admin tools because store operators need an
+operational summary the moment they log in.
 
 ## 2. Product management
 
@@ -24,8 +24,8 @@ commerce back offices.
 
 ## 5. Inventory management
 
-Track stock levels, availability, low-stock alerts, inventory changes, and whether items can be oversold or
-backordered. Product admin in mainstream platforms includes inventory handling because catalog without stock control
+Track stock levels, availability, low-stock alerts, inventory changes, and whether items can be oversold or back
+ordered. Product admin in mainstream platforms includes inventory handling because catalog without stock control
 is just decorative lying.
 
 ## 6. Pricing management
@@ -125,7 +125,7 @@ Admins need to know when something is broken before the customer does.
 
 ## 23. Returns and refunds
 
-If you’ll support post-purchase operations properly, you need return requests, refund handling, return statuses, and
+If you support post-purchase operations properly, you need return requests, refund handling, return statuses, and
 notes.
 
 ## 24. Manual order creation
@@ -137,7 +137,7 @@ creating manual orders from the control panel.
 
 A settings area for delivery providers, payment gateways, email providers, accounting, ERP, or webhook endpoints.
 Since you mentioned shipping and tax settings, this becomes important quickly.
-If you want this to be resellable as a platform
+If you want this to be resellable as a platform, 
 Add these platform-level capabilities:
 
 ## 26. Tenant / client management
@@ -149,23 +149,24 @@ Each client should have their own:
 - tax config
 - shipping config
 - payment config
-  users
-  catalog scope
-  storefront theme/settings
-  That is what starts turning your project into a real reusable platform instead of one giant custom build wearing
-  different hats.
+- users
+- catalog scope
+- storefront theme/settings
+
+That is what starts turning your project into a real reusable platform instead of one giant custom build wearing
+different hats.
 
 ## 27. Theme and branding configuration
 
-    Let the admin manage logo, colors, fonts, homepage sections, banner images, footer content, and maybe layout presets
-    for the storefront. Since one of your goals is client-specific storefront design, this is a big one.
+Let the admin manage logo, colors, fonts, homepage sections, banner images, footer content, and maybe layout presets
+for the storefront. Since one of your goals is client-specific storefront design, this is a big one.
 
 ## 28. Feature flags / module toggles
 
-    Allow some clients to enable or disable modules like discounts, gift cards, pickup, delivery integrations, or
-    advanced reporting.
+Allow some clients to enable or disable modules like discounts, gift cards, pickup, delivery integrations, or
+advanced reporting.
 
 ## 29. Multi-store / multi-channel readiness
 
-    If a client later wants multiple storefronts, branches, or sales channels, your admin should be built so this is
-    possible without rewriting the planet.
+If a client later wants multiple storefronts, branches, or sales channels, your admin should be built so this is
+possible without rewriting the planet.
