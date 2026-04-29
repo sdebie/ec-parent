@@ -55,7 +55,7 @@
 
 ### 🛒 Cart
 
-**Features:** `cartStore.ts`, `localStorage`
+**Features:** `CartStore.ts`, `localStorage`
 
 - Cart is **entirely client-side** — items stored as JSON in `localStorage` under key `ec_cart_order_items`
 - A session UUID (`cart_session_id`) is generated on first visit and persisted
