@@ -1,4 +1,4 @@
-name: Publish Common Library to GitHub Packages
+name: Publish Parent Library to GitHub Packages
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       packages: write
 
     steps:
-      # 1. Download the common library source code
+      # 1. Download the parent library source code
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -29,8 +29,11 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: 'maven'
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
 
-      # 3. Compile, package, and deploy the JAR directly to GitHub Packages
+      # 3. Publish the parent POM to GitHub Packages
       - name: Publish to GitHub Packages
         run: mvn --batch-mode deploy -DskipTests
         env:
