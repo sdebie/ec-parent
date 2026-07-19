@@ -18,7 +18,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <skipITs>true</skipITs>
+        <!-- ITs (failsafe, *IT.java) run as part of `mvn verify`. They include the
+             auth-hardening security suites and the rate-limit end-to-end proofs;
+             skipping them makes the verify gate vacuous. Override with -DskipITs. -->
+        <skipITs>false</skipITs>
         <skipBuild>false</skipBuild>
 
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
