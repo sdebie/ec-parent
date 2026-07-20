@@ -198,10 +198,9 @@ environment variables injected into the Docker container at startup.
 | quarkus.hibernate-orm.database.generation | DATABASE_GENERATION         | updateDatabase                                | schema strategy                               |
 | quarkus.http.cors.origins                 | CORS_ORIGINS                | *                                             | Locks API to client web domain                |
 | storage.path                              | IMAGE_STORAGE_PATH          | /tmp/images                                   | Target folder directory for multi-part images |
-| payfast.merchant-id                       | PAYFAST_MERCHANT_ID         | 10037872                                      | Client PayFast account ID (Sandbox default)   |
-| payfast.merchant-key                      | PAYFAST_MERCHANT_KEY        | jvyb485e4zpxq                                 | Client PayFast security key                   |
-| payfast.passphrase                        | PAYFAST_PASSPHRASE          | testpayfast1                                  | Salt string used to sign MD5 hashes           |
-| payfast.base-url                          | PAYFAST_BASE_URL            | https://payfast.co.za                         | Target processing URL                         |
+| payfast.merchant-id                       | PAYFAST_MERCHANT_ID         | placeholder-merchant-id                       | Client PayFast account ID (set in .env)       |
+| payfast.merchant-key                      | PAYFAST_MERCHANT_KEY        | placeholder-merchant-key                      | Client PayFast security key (set in .env)     |
+| payfast.passphrase                        | PAYFAST_PASSPHRASE          | placeholder-passphrase                        | Salt string used to sign MD5 hashes           |
 | payfast.notify-url                        | PAYFAST_NOTIFY_URL          | https://sdebiehome.co.za                      | Webhook target for Instant Transaction Links  |
 | payfast.return-url                        | PAYFAST_RETURN_URL          | https://sdebiehome.co.za                      | Success landing route for retail shoppers     |
 | payfast.cancel-url                        | PAYFAST_CANCEL_URL          | https://sdebiehome.co.za                      | Fallback route if checkout is aborted         |
