@@ -73,7 +73,7 @@ jobs:
 
   # Job 2: Runs strictly AFTER strip-snapshot succeeds
   publish-jar:
-    needs: strip-snapshot
+#    needs: strip-snapshot
     runs-on: ubuntu-latest
 
     permissions:
